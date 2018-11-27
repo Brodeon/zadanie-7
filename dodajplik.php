@@ -2,6 +2,7 @@
 session_start();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +15,14 @@ session_start();
     <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-<form method="post" action="loginProc.php">
-    Username:<br/>
-    <input type="text" name="username"><br/><br/>
-
-    Password:<br/>
-    <input type="password" name="password"><br/><br/>
-    <input type="submit" value="Log in"><br/><br/></br>
-
-    <a href="http://przemekutp.pl/zad7/rejrstrform.html">Zarejestruj się</a>
-    <a href="https://github.com/Brodeon">Mój git</a>
-
+<html>
+<body>
+<form action="odbierz.php" method="POST"
+      ENCTYPE="multipart/form-data">
+    <input type="file" name="plik"/>
+    <input type="submit" value="Wyślij plik"/>
 </form>
+</body>
+</html>
 </body>
 </html>
